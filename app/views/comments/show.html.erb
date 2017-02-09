@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @comment.description %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @comment.user %>
+</p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @comment.post %>
+</p>
+
+<%= link_to 'Edit', edit_user_comment_path(@comment) %> |
+<%= link_to 'Images', comment_images_path(@comment) %> |
+<%= link_to 'Add image', new_comment_image_path(@comment) %>
+<%= link_to 'Back', comments_path %>
