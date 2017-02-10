@@ -9,6 +9,19 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <%= link_to 'SE II', root_path%>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><%= link_to 'Home', root_path%></li>
+          <li><%= link_to 'Users', users_path%></li>
+          <li><%= link_to 'Posts', posts_path%></li>
+          <li><%= link_to 'Images', images_path%></li>
+        </ul>
+      </div>
+    </nav>
     <div class="container">
       <%= yield %>
     </div>
