@@ -2,7 +2,7 @@
 
 <h1>Posts</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Name</th>
@@ -13,9 +13,10 @@
   </thead>
 
   <tbody>
-    dsadas
     <% @posts.each do |post| %>
-      <tr class="table-hover">
+    
+      <tr >
+        
         <td><%= post.name  %></td>
         <td><%= post.description %></td>
         <td><%= post.user %></td>
