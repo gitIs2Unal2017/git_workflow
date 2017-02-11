@@ -24,8 +24,10 @@ default: &default
 development:
   <<: *default
   database: gitworkflow_development
-  username: gitworkflow
-  password: 123456789
+
+   username: gitworkflow
+   password: 123456789
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
